@@ -1,0 +1,27 @@
+body {
+    background: linear-gradient(45deg, red, yellow, green, cyan, blue, magenta);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    animation: backgroundAnimation 5s infinite alternate;
+}
+
+h1 {
+    color: lime;
+    text-shadow: 3px 3px 5px purple;
+    transform: rotate(-10deg);
+}
+
+p {
+    color: orange;
+    font-size: 1.5em;
+    text-decoration: underline wavy pink;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
