@@ -48,20 +48,27 @@ body {
 }
 
 .menu li:hover {
-    background-color: white;
-    color: #4CAF50;
-    /* Green text on hover */
-    border-radius: 5px;
-    background: linear-gradient(90deg, #FFC300, #DAF7A6, #FF5733);
-    /* Gradient on hover with yellow, light green, and red */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Add shadow on hover */
-    transform: scale(1.05);
-    /* Slight zoom effect */
+    background: linear-gradient(90deg, #1F1C2C, #928DAB, #1F1C2C);
+    /* Dark gradient with a metallic feel */
+    color: #FFD700;
+    /* Gold text color */
+    border: 2px solid #FFD700;
+    /* Gold border */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    /* Stronger shadow */
+    transform: scale(1.1) rotate(-2deg);
+    /* Slight zoom and rotation for a dynamic effect */
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition */
+}
+
+.content.active {
+    display: flex;
+    /* Show the active section */
 }
 
 .content {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;

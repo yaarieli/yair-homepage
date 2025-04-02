@@ -10,23 +10,69 @@
   <body>
     <div class="menu">
       <ul>
-        <li>Home</li>
-        <li>About Me</li>
-        <li>Projects</li>
-        <li>Contacts</li>
+        <li onclick="switchTab('home')">Home</li>
+        <li onclick="switchTab('about')">About Me</li>
+        <li onclick="switchTab('quotes')">Recommendations</li>
+        <li onclick="switchTab('contacts')">Contacts</li>
       </ul>
     </div>
 
-    <div class="content">
-        <div class="text">
-            <h1>Hey, I'm Yair – Probably Worth Knowing</h1>
-            <p>Welcome to my corner of the internet! I write code, break things (intentionally, mostly), and piece them back together in smarter ways. I enjoy making tech work for people instead of the other way around.</p>
-            <p>When I’m not wrangling code, you might find me learning music, running (well, trying), or just pondering life over a cup of tea. Stick around, check out what I do, or just say hi—curiosity is always welcome here!</p>
-        </div>
-        
-      <div class="image">
-        <img src="MF-61.jpg" alt="My Image"/>
+    <div id="home" class="content active">
+      <div class="text">
+        <h1>Hey, I'm Yair – Probably Worth Knowing</h1>
+        <p>Welcome to my corner of the internet! I write code, break things (intentionally, mostly), and piece them back together in smarter ways. I enjoy making tech work for people instead of the other way around.</p>
+        <p>When I’m not wrangling code, you might find me learning music, running (well, trying), or just pondering life over a cup of tea. Stick around, check out what I do, or just say hi—curiosity is always welcome here!</p>
       </div>
+      <div class="image">
+        <img src="MF-61.jpg" alt="My Image" />
+      </div>
+    </div>
+
+    <div id="about" class="content">
+      <div class="text">
+        <h1>About Me</h1>
+        <p>In a more formal tone, I am a dedicated professional with a passion for technology and innovation, striving to create meaningful solutions that positively impact both individuals and organizations.</p>
+
+        <p>I'm seeking a dynamic work environment with mentorship opportunities to grow, contribute, and achieve my personal and professional goals.</p>
+        
+        <p>Balancing my career and family is a priority, and I'm committed to making a meaningful impact in both areas.</p>
+        
+      </div>
+      <div class="image">
+        <img src="Family.jpeg" alt="Family Image" />
+      </div>
+    </div>
+
+    <div id="quotes" class="content">
+      <div class="text">
+        <h1>Fake Quotes About Me</h1>
+        <div class="quotes">
+          <blockquote>
+            <p>"Yair’s ability to turn coffee into code is truly inspiring. He’s the modern-day wizard of the digital world."</p>
+            <footer>– Anonymous</footer>
+          </blockquote>
+          <blockquote>
+            <p>"Yair is the only person I know who can balance coding and philosophy while sipping tea. A true Renaissance man!"</p>
+            <footer>– A close friend</footer>
+          </blockquote>
+          <blockquote>
+            <p>"I tried asking Yair how he codes so fast, but he just handed me a cup of tea and said, 'It's all about the balance.'"</p>
+            <footer>– A curious colleague</footer>
+          </blockquote>
+          <blockquote>
+            <p>"If there’s anyone who can break code and rebuild it better, it’s Yair. Seriously, he might be from the future."</p>
+            <footer>– Tech Enthusiast</footer>
+          </blockquote>
+        </div>
+      </div>
+      <div class="image">
+        <img src="MD-393.jpg" alt="Inspirational Image" />
+      </div>
+    </div>
+
+    <div id="contacts" class="content">
+      <h1>Contact Me</h1>
+      <p>Feel free to reach out to me at yair@example.com or connect with me on LinkedIn.</p>
     </div>
   </body>
 </html>
