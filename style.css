@@ -101,10 +101,16 @@ body {
     /* Subtle gray color for the paragraph */
     background-color: rgba(255, 255, 255, 0.8);
     /* Slightly transparent background */
-    padding: 10px;
-    /* Add padding for better readability */
+    padding: 15px;
+    /* Increased padding for better readability */
     border-radius: 5px;
     /* Rounded corners */
+    font-size: 18px;
+    /* Slightly larger font size */
+    line-height: 1.8;
+    /* Increased line spacing */
+    margin-bottom: 15px;
+    /* Add space between paragraphs */
 }
 
 .content .image {
